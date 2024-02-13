@@ -40,23 +40,31 @@ function attachButtons() {
 // 初めのページへ遷移
 function attachButtonFirst() {
   arrowButton = document.getElementById('c-pagination__prev--first')
+  if (sections.length > PAGINATION_DISPLAY_MAX) {
     document.getElementById('c-pagination__prev--first').addEventListener('click', () => {
       deactivate()
       currentSectionIndex = 0
       activate()
       displayPaginationList()
     })
+  } else {
+    arrowButton.style.display = 'none'
+  }
 }
 
 // 最後のページへ遷移
 function attachButtonLast() {
   arrowButton = document.getElementById('c-pagination__next--last')
+  if (sections.length > PAGINATION_DISPLAY_MAX) {
     document.getElementById('c-pagination__next--last').addEventListener('click', () => {
       deactivate()
       currentSectionIndex = sections.length - 1
       activate()
       displayPaginationList()
     })
+  } else {
+    arrowButton.style.display = 'none'
+  }
 }
 
 // 前のページへ遷移
