@@ -1,0 +1,12 @@
+{
+  "name": "js_pagination",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "scss": "sass src/scss:public/css"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}

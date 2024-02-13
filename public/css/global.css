@@ -1,0 +1,33 @@
+.p-blogList {
+  display: none;
+}
+.p-blogList.is-current {
+  display: flex;
+}
+
+.c-pagination {
+  display: flex;
+  gap: 24px;
+}
+.c-pagination__list {
+  display: flex;
+  gap: 16px;
+}
+.c-pagination__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+.c-pagination__button.is-current {
+  color: white;
+  background-color: brown;
+  pointer-events: none;
+}
+.c-pagination__arrow:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=global.css.map */

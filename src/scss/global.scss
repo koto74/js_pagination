@@ -1,0 +1,35 @@
+
+.p-blogList {
+    display: none;
+
+    &.is-current {
+        display: flex;
+    }
+}
+
+.c-pagination {
+    display: flex;
+    gap: 24px;
+    
+    &__list {
+        display: flex;
+        gap: 16px;
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        &.is-current {
+            color: white;
+            background-color: brown;
+            pointer-events: none;
+        }
+    }
+    
+    &__arrow:disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
